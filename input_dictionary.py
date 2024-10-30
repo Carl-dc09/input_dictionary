@@ -28,13 +28,13 @@ def input_dictionary():
                 input_num_ranges["41 - 50"].append(input_number)
 
         # Print error if the input is invalid
-        except:
+        except ValueError:
             print("Error: Invalid input. Please enter a number.")
 
 # Print the result
     print("\nInput summary:")
-    for range_key, input_numbers in input_num_ranges.items():
+    for input_range, input_numbers in input_num_ranges.items():
         input_count = len(input_numbers)
-        print(f"\n{range_key} = {input_count} \nValues: {input_numbers}")
+        print(f"\n{input_range} = {input_count} \nValues: {input_numbers}")
 
 input_dictionary()
