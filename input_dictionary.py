@@ -26,4 +26,9 @@ def input_dictionary():
                 input_num_ranges["31 - 40"].append(input_number)
             elif 41 <= input_number <= 50:
                 input_num_ranges["41 - 50"].append(input_number)
+
+        # Print error if the input is invalid
+        except:
+            print("Error: Invalid input. Please enter a number.")
+
 # Print
