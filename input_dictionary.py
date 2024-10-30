@@ -31,4 +31,8 @@ def input_dictionary():
         except:
             print("Error: Invalid input. Please enter a number.")
 
-# Print
+# Print the result
+    print("\nInput summary:")
+    for range_key, input_numbers in input_num_ranges.items():
+        input_count = len(input_numbers)
+        print(f"\n{range_key} = {input_count} \nValues: {input_numbers}")
