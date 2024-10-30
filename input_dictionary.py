@@ -36,3 +36,5 @@ def input_dictionary():
     for range_key, input_numbers in input_num_ranges.items():
         input_count = len(input_numbers)
         print(f"\n{range_key} = {input_count} \nValues: {input_numbers}")
+
+input_dictionary()
